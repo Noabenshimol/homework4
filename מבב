@@ -1,0 +1,176 @@
+/* import java.util.Scanner;
+class Main
+{
+  public static void main(final String[] args)
+  {
+    final Scanner scan = new Scanner(System.in);  
+    System.out.println("enter your stadent name:");
+    String str1=scan.next();
+    System.out.println("enter your stadent name:");
+    String str2=scan.next();
+    System.out.println("enter your stadent name:");
+    String str3=scan.next();
+    if ((str1.compareTo(str2))<0&&((str2.compareTo(str3)<0)))
+      System.out.println(str1+","+str2+","+ str3);
+    if ((str2.compareTo(str3)<0)&&((str3.compareTo(str1)<0)))
+      System.out.println(str2+","+str3+","+str1);
+    if ((str3.compareTo(str1)<0)&&((str1.compareTo(str2)<0)))
+      System.out.println(str3+","+str1+","+str2);
+    if ((str1.compareTo(str3)<0)&&((str3.compareTo(str2)<0)))
+      System.out.println(str1+","+str3+","+ str2);
+    if ((str3.compareTo(str2)<0)&&((str2.compareTo(str1)<0)))
+      System.out.println(str3+","+str2+","+ str1);
+    if ((str2.compareTo(str1)<0)&&((str1.compareTo(str3)<0)))
+      System.out.println(str2+","+str1+","+ str3);
+  }
+} */
+
+/* import java.util.Scanner;
+class Main
+{
+  public static void main(final String[] args)
+  {
+    final Scanner scan = new Scanner(System.in);  
+    System.out.println("enter A sentence between 4 words.:");
+    String str1=scan.nextLine();
+    int size = str1.length();
+    System.out.println(size);
+    
+  }
+} */
+    
+/* import java.util.Scanner;
+class Main
+{
+  public static void main(final String[] args)
+  {
+    final Scanner scan = new Scanner(System.in);  
+    System.out.println("enter A word between 3:");
+    String str1=scan.nextLine();
+    char letter1=str1.charAt(0); 
+    char letter2=str1.charAt(1); 
+    char letter3=str1.charAt(2); 
+    if (letter1==letter3)
+      System.out.println("True");
+    else
+      System.out.println("False");
+  }
+} */
+
+/* import java.util.Scanner;
+class Main
+{
+  public static void main(final String[] args)
+  {
+    final Scanner scan = new Scanner(System.in);  
+    System.out.println("enter A word between 3:");
+    String str1=scan.nextLine();
+    char letter1=str1.charAt(0); 
+    char letter2=str1.charAt(1); 
+    char letter3=str1.charAt(2);
+    System.out.println(letter3+"" +letter2+letter1);
+  }
+} */
+
+/* import java.util.Scanner;
+class Main 
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);  
+    System.out.println("enter word btwwen 4:");
+    String str1 = scan.nextLine();
+    char letter1 = str1.charAt(0); 
+    char letter2 = str1.charAt(1); 
+    char letter3 = str1.charAt(2);
+    char letter4 = str1.charAt(3);
+    if (letter1 == 'u' || letter1 == 'o' || letter1 == 'i' || letter1 == 'e' || letter1 == 'a') 
+      letter1 = ('*');
+    if (letter2 == 'u' || letter2 == 'o' || letter2 == 'i' || letter2 == 'e' || letter2 == 'a') 
+      letter2 = ('*');
+    if (letter3 == 'u' || letter3 == 'o' || letter3 == 'i' || letter3 == 'e' || letter3 == 'a') 
+      letter3 = ('*');
+    if (letter4 == 'u' || letter4 == 'o' || letter4 == 'i' || letter4 == 'e' || letter4 == 'a') 
+      letter4 = ('*');
+  System.out.println(letter1 + "" + letter2 + "" + letter3 + "" + letter4);
+  }
+} */
+
+/* import java.util.Random;
+public class Main
+{
+ public static void main(String []args)
+ {
+ int num;
+ Random r=new Random();
+ num=r.nextInt(101);
+  if (num<10)
+    System.out.println("Single-digit");
+  if (9<num)
+    System.out.println("Double digit");
+  if (num%2==0)
+    System.out.println("divided by 2");
+  if (num%3==0)
+    System.out.println("divided by 3");
+  }
+} */
+
+/* import java.util.Scanner;
+
+class Main {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);  
+    System.out.println("Enter the x of point 1:");
+    int x1 = scan.nextInt();
+    System.out.println("Enter the y of point 1:");
+    int y1 = scan.nextInt();
+    System.out.println("Enter the x of point 2:");
+    int x2 = scan.nextInt();
+    System.out.println("Enter the y of point 2:");
+    int y2 = scan.nextInt();
+
+    int sum_x = (x1 - x2);
+    int sum_y = (y1 - y2);
+
+    double strong_x = Math.pow(sum_x, 2);
+    double strong_y = Math.pow(sum_y, 2);
+
+    double sum_xy = (strong_x + strong_y);
+
+    double distance = Math.sqrt(sum_xy);
+
+    System.out.println(distance);
+  }
+} */
+    
+/* import java.util.Scanner;
+class Main 
+{
+  public static void main(String[] args)
+  {
+    Scanner scan = new Scanner(System.in);  
+    System.out.println("Enter the radius of the circle:");
+    double radios = scan.nextDouble();
+    double S=3.14*radios*radios;
+    double P=2*3.14*radios;
+    System.out.println(S);
+    System.out.println(P);
+  }
+} */
+
+/* import java.util.Scanner;
+
+class Main 
+{
+  public static void main(String[] args) 
+  {
+    Scanner scan = new Scanner(System.in);  
+    System.out.println("Enter the length of the first side:");
+    int side1 = scan.nextInt();
+    System.out.println("Enter the length of the other side:");
+    int side2 = scan.nextInt();
+    double side3=Math.pow(side1,2);
+    double side4=Math.pow(side2,2);
+    System.out.println(side3+side4);
+  }
+} */
